@@ -572,7 +572,15 @@ Represents a list of native scripts.
 | prices | [ExPrices](#utxorpc-v1alpha-cardano-ExPrices) |  | The prices. |
 | max_execution_units_per_transaction | [ExUnits](#utxorpc-v1alpha-cardano-ExUnits) |  | The maximum execution units per transaction. |
 | max_execution_units_per_block | [ExUnits](#utxorpc-v1alpha-cardano-ExUnits) |  | The maximum execution units per block. |
-| min_fee_script_ref_cost_per_byte | [uint64](#uint64) |  | The minimum fee per script reference byte. |
+| min_fee_script_ref_cost_per_byte | [RationalNumber](#utxorpc-v1alpha-cardano-RationalNumber) |  | The minimum fee per script reference byte. |
+| pool_voting_thresholds | [VotingThresholds](#utxorpc-v1alpha-cardano-VotingThresholds) |  | The pool voting thresholds. |
+| drep_voting_thresholds | [VotingThresholds](#utxorpc-v1alpha-cardano-VotingThresholds) |  | The drep voting thresholds. |
+| min_committee_size | [uint32](#uint32) |  | The minimum committee size. |
+| committee_term_limit | [uint64](#uint64) |  | The committee term limit. |
+| governance_action_validity_period | [uint64](#uint64) |  | The governance action validity period. |
+| governance_action_deposit | [uint64](#uint64) |  | The governance action deposit. |
+| drep_deposit | [uint64](#uint64) |  | The drep deposit. |
+| drep_inactivity_period | [uint64](#uint64) |  | The drep inactivity period. |
 
 
 
@@ -1160,6 +1168,21 @@ Represents a VKey witness used to sign a transaction.
 | stake_credential | [StakeCredential](#utxorpc-v1alpha-cardano-StakeCredential) |  |  |
 | drep | [DRep](#utxorpc-v1alpha-cardano-DRep) |  |  |
 | coin | [uint64](#uint64) |  |  |
+
+
+
+
+
+
+<a name="utxorpc-v1alpha-cardano-VotingThresholds"></a>
+
+### VotingThresholds
+
+
+
+| Field | Type | Label | Description |
+| ----- | ---- | ----- | ----------- |
+| thresholds | [RationalNumber](#utxorpc-v1alpha-cardano-RationalNumber) | repeated |  |
 
 
 
